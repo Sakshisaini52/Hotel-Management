@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+</head>
+<body>
+<form id="form1" onsubmit="popup()">
+<h2 text-align="center"> Please fill out the form in order to reach us </h2>
+<span>Enter your name:</span><br>
+<input type="text" placeholder="Enter your name:" required><br>
+<span>Enter email id:</span><br>
+<input type="email" placeholder="Enter your email id"><br>
+<span>Explain your issue:</span><br>
+<textarea placeholder="Discuss your issue"></textarea><br><br>
+<input type="Submit" placeholder="Submit" value="Submit" id="button">
+</form>
+</body>
+<style>
+body{
+background-image:url(image/img1.jpg);
+background-size: cover;
+}
+h2{
+    padding: 1.75rem;
+}
+input{
+width:50%;
+height:30px;
+margin-left: 20%;
+padding: 5px;
+border: none;
+border-radius: .5rem;
+margin-top:.15rem;
+margin-bottom: .5rem;
+}
+textarea{
+margin-left: 20%;
+height:100px;
+width:50%;
+border-radius: .5rem;
+margin-top:.25rem;
+}
+#form1{
+width:500px;
+height:500px;
+/* background:#c478ac88; */
+backdrop-filter: blur(5px);
+margin-top: 5%;
+margin-left: 25%;
+border-radius: 10px;
+box-shadow: 5px 10px 18px #000000;
+}
+span{
+font-size: 20px;
+margin-left: 20%;
+}
+#button{
+background-color: green;
+border-radius: .5rem;
+border: none;
+font-size: 20px;
+color: ivory;
+width:260px;
+height:60px;
+display: block;
+}
+</style>
+<script>
+function popup(){
+alert("Your request has been submitted! We will reach you shortly....")
+}
+</script>
+</html>
